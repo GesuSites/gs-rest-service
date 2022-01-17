@@ -8,7 +8,23 @@ import org.springframework.web.bind.annotation.RestController;
 public class TomatoController {
 
     @GetMapping("/api/growbox/tomato")
-    public Tomato tomato(float humidity, long temperature, long illuminance, String lastWateringTime, String imageUrl, long yield_thisYear, long yield_previousYear) {
-        return new Tomato(humidity, temperature, illuminance, lastWateringTime, imageUrl, yield_thisYear, yield_previousYear);
+    public Tomato tomato(
+        float humidity,
+        long temperature,
+        long illuminance,
+        String lastWateringTime,
+        String imageUrl,
+        long yield_thisYear,
+        long yield_previousYear
+    ) {
+        return new Tomato(
+            humidity,
+            temperature,
+            illuminance,
+            lastWateringTime,
+            imageUrl,
+            yield_thisYear,
+            yield_previousYear
+        );
     }
 }

@@ -31,8 +31,8 @@ import org.springframework.test.web.servlet.MockMvc;
 @AutoConfigureMockMvc
 public class GreetingControllerTests {
 
-	@Autowired
-	private MockMvc mockMvc;
+	/*@Autowired
+	private MockMvc mockMvc;*/
 
 	@Test
 	public void noParamGreetingShouldReturnDefaultMessage() throws Exception {
